@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Coding World</title>
+    <style>
+        /* CSS styling */
+        body {
+            font-family: sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* JS styling */
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Our Coding World</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Our Coding World</h2>
+        <p>Here at Our Coding World, we're passionate about all things code. Whether you're a beginner or an experienced
+            developer, we have resources and tutorials to help you level up your skills.</p>
+        <p>Check out our latest posts:</p>
+        <ul>
+            <li><a href="#">10 Tips for Better Code Quality</a></li>
+            <li><a href="#">Introduction to JavaScript Promises</a></li>
+            <li><a href="#">Building a Responsive Navigation Menu with Flexbox</a></li>
+        </ul>
+        <p>Ready to get started? Sign up for our newsletter for updates and exclusive content:</p>
+        <form>
+            <input type="email" name="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </main>
+    <script>
+        // JS script to add highlight class to links on click
+        const links = document.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                link.classList.add('highlight');
+            });
+        });
+    </script>
+</body>
+
+</html>
